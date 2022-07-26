@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Site Metas -->
+	 <title>IES - Agro Industrial N° 72</title>  
+	 <meta name="keywords" content="">
+	 <meta name="description" content="">
+	 <meta name="author" content="">
+ 
+	 <!-- Site Icons -->
+	 <link rel="shortcut icon" href="images/insignea.png" type="image/x-icon" />
+	 <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="css/versions.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Modernizer for Portfolio -->
+    <script src="js/modernizer.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="host_version"> 
+
+	<!-- Modal -->
+	<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		  <div class="modal-content">
+			  <div class="modal-header tit-up">
+				  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				  <h4 class="modal-title">Inicio de sesión del estudiante</h4>
+			  </div>
+			  <div class="modal-body customer-box">
+				  <!-- Nav tabs -->
+				  <ul class="nav nav-tabs">
+					  <li><a class="active" href="#Login" data-toggle="tab">Acceso</a></li>
+					  <li><a href="#Registration" data-toggle="tab">Registrate</a></li>
+				  </ul>
+				  <!-- Tab panes -->
+				  <div class="tab-content">
+					  <div class="tab-pane active" id="Login">
+						  <form role="form" class="form-horizontal">
+							  <div class="form-group">
+								  <div class="col-sm-12">
+									  <input class="form-control" id="email1" placeholder="Nombres" type="text">
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <div class="col-sm-12">
+									  <input class="form-control" id="exampleInputPassword1" placeholder="correo electronico" type="email">
+								  </div>
+							  </div>
+							  <div class="row">
+								  <div class="col-sm-10">
+									  <button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+										  Enviar
+									  </button>
+									  <a class="for-pwd" href="javascript:;">¿Olvidaste tu contraseña?</a>
+								  </div>
+							  </div>
+						  </form>
+					  </div>
+					  <div class="tab-pane" id="Registration">
+						  <form role="form" class="form-horizontal">
+							  <div class="form-group">
+								  <div class="col-sm-12">
+									  <input class="form-control" placeholder="Nombres" type="text">
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <div class="col-sm-12">
+									  <input class="form-control" id="email" placeholder="correo electronico" type="email">
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <div class="col-sm-12">
+									  <input class="form-control" id="mobile" placeholder="celular" type="email">
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <div class="col-sm-12">
+									  <input class="form-control" id="password" placeholder="contraseña" type="password">
+								  </div>
+							  </div>
+							  <div class="row">							
+								  <div class="col-sm-10">
+									  <button type="button" class="btn btn-light btn-radius btn-brd grd1">
+										  Guardar &amp; Continue
+									  </button>
+									  <button type="button" class="btn btn-light btn-radius btn-brd grd1">
+										  Cancelar</button>
+								  </div>
+							  </div>
+						  </form>
+					  </div>
+				  </div>
+			  </div>
+		  </div>
+		</div>
+	  </div>
+    <!-- LOADER -->
+	<div id="preloader">
+		<div class="loader-container">
+			<div class="progress-br float shadow">
+				<div class="progress__item"></div>
+			</div>
+		</div>
+	</div>
+	<!-- END LOADER -->	
+
+    <!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html">
+					<img src="images/logoagro02.png" alt="" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-host">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active"><a class="nav-link" href="index.html">Inicio</a></li>
+						<li class="nav-item"><a class="nav-link" href="about.html">Nosotros</a></li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Areas</a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="course-grid-2.html">MECANICA AUTOMOTRIZ </a>
+								<a class="dropdown-item" href="course-grid-3.html">AGROPECUARIA </a>
+								<a class="dropdown-item" href="course-grid-4.html">PASANTIA</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Servicios</a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="blog.html">servicios</a>
+								<a class="dropdown-item" href="blog-single.html">Fotografias </a>
+							</div>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="teachers.html">Docentes</a></li>
+						<!--<li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>-->
+						<li class="nav-item"><a class="nav-link" href="contact.html">Contactos</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+                        <li><a class="hover-btn-new log orange" href="#" data-toggle="modal" data-target="#login"><span>Reservar Vacante</span></a></li>
+                    </ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+	
+	<div class="all-title-box">
+		<div class="container text-center">
+			<h1>Docentes<span class="m_1">Profesores que laboran en nuestra institucion.</span></h1>
+		</div>
+	</div>
+	
+	<div id="teachers" class="section wb">
+        <div class="container">
+            <div class="row">
+				<div class="col-lg-3 col-md-6 col-12">
+					<div class="our-team">
+						<div class="team-img">
+							<img src="images/profesor.jpg">
+							<div class="social">
+								<ul>
+									<li><a href="#" class="fa fa-facebook"></a></li>
+									<li><a href="#" class="fa fa-twitter"></a></li>
+									<li><a href="#" class="fa fa-linkedin"></a></li>
+									<li><a href="#" class="fa fa-skype"></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="team-content">
+							<h3 class="title">Sadot Betancur Lopez</h3>
+							<span class="post">Director</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 col-12">
+					<div class="our-team">
+						<div class="team-img">
+							<img src="images/profesora.jpg">
+							<div class="social">
+								<ul>
+									<li><a href="#" class="fa fa-facebook"></a></li>
+									<li><a href="#" class="fa fa-twitter"></a></li>
+									<li><a href="#" class="fa fa-linkedin"></a></li>
+									<li><a href="#" class="fa fa-skype"></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="team-content">
+							<h3 class="title">Doris Yerba Ilata</h3>
+							<span class="post">Psicologa</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 col-12">
+					<div class="our-team">
+						<div class="team-img">
+							<img src="images/profesora.jpg">
+							<div class="social">
+								<ul>
+									<li><a href="#" class="fa fa-facebook"></a></li>
+									<li><a href="#" class="fa fa-twitter"></a></li>
+									<li><a href="#" class="fa fa-linkedin"></a></li>
+									<li><a href="#" class="fa fa-skype"></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="team-content">
+							<h3 class="title">Yudy ruth mamani hancco</h3>
+							<span class="post">trabajadora social</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 col-12">
+					<div class="our-team">
+						<div class="team-img">
+							<img src="images/profesor.jpg">
+							<div class="social">
+								<ul>
+									<li><a href="#" class="fa fa-facebook"></a></li>
+									<li><a href="#" class="fa fa-twitter"></a></li>
+									<li><a href="#" class="fa fa-linkedin"></a></li>
+									<li><a href="#" class="fa fa-skype"></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="team-content">
+							<h3 class="title">adrian antonio ccoa nina</h3>
+							<span class="post">auxiliar de educacion</span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-3 col-md-6 col-12">
+					<div class="our-team">
+						<div class="team-img">
+							<img src="images/profesor.jpg">
+							<div class="social">
+								<ul>
+									<li><a href="#" class="fa fa-facebook"></a></li>
+									<li><a href="#" class="fa fa-twitter"></a></li>
+									<li><a href="#" class="fa fa-linkedin"></a></li>
+									<li><a href="#" class="fa fa-skype"></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="team-content">
+							<h3 class="title">victor valero tapara</h3>
+							<span class="post">jefe de campo</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 col-12">
+					<div class="our-team">
+						<div class="team-img">
+							<img src="images/profesora.jpg">
+							<div class="social">
+								<ul>
+									<li><a href="#" class="fa fa-facebook"></a></li>
+									<li><a href="#" class="fa fa-twitter"></a></li>
+									<li><a href="#" class="fa fa-linkedin"></a></li>
+									<li><a href="#" class="fa fa-skype"></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="team-content">
+							<h3 class="title">luz pacheco quiñones</h3>
+							<span class="post">coordinar de ciencias</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 col-12">
+					<div class="our-team">
+						<div class="team-img">
+							<img src="images/profesor.jpg">
+							<div class="social">
+								<ul>
+									<li><a href="#" class="fa fa-facebook"></a></li>
+									<li><a href="#" class="fa fa-twitter"></a></li>
+									<li><a href="#" class="fa fa-linkedin"></a></li>
+									<li><a href="#" class="fa fa-skype"></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="team-content">
+							<h3 class="title">anibal vera ticona</h3>
+							<span class="post">coordinador letras</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 col-12">
+					<div class="our-team">
+						<div class="team-img">
+							<img src="images/profesora.jpg">
+							<div class="social">
+								<ul>
+									<li><a href="#" class="fa fa-facebook"></a></li>
+									<li><a href="#" class="fa fa-twitter"></a></li>
+									<li><a href="#" class="fa fa-linkedin"></a></li>
+									<li><a href="#" class="fa fa-skype"></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="team-content">
+							<h3 class="title">roxana caballero calla</h3>
+							<span class="post">coordinador tutoria</span>
+						</div>
+					</div>
+				</div>
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->	
+
+    <div id="testimonials" class="parallax section db parallax-off" style="background-image:url('images/parallax_04.jpg');">
+        <div class="container">
+            <div class="section-title text-center">
+                <h3>frases y citas célebres sobre la educación</h3>
+                <p>Pensamientos de autores diversos que nos ayudan a comprender la educación y el aprendizaje. </p>
+            </div><!-- end title -->
+
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="testi-carousel owl-carousel owl-theme">
+                        <div class="testimonial clearfix">
+							<div class="testi-meta">
+                                <img src="images/RogerLewin.png" alt="" class="img-fluid">
+                                <h4>Roger Lewin</h4>
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> La educación</h3>
+                                <p class="lead">Si no estás dispuesto a aprender nadie te puede ayudar. Si estás dispuesto a aprender nadie te puede parar.</p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+
+                        <div class="testimonial clearfix">
+							<div class="testi-meta">
+                                <img src="images/mahatmagandi.jpg" alt="" class="img-fluid">
+                                <h4>Mahatma Gandhi</h4>
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> es el camino</h3>
+                                <p class="lead">No hay escuela igual que un hogar decente y no hay maestro igual a un padre virtuoso.</p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+
+                        <div class="testimonial clearfix">
+							<div class="testi-meta">
+                                <img src="images/confucio.jpg" alt="" class="img-fluid ">
+                                <h4>Confucio</h4>
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> no el objetivo</h3>
+                                <p class="lead">La educación genera confianza. La confianza genera esperanza. La esperanza genera paz. </p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+                        <div class="testimonial clearfix">
+							<div class="testi-meta">
+                                <img src="images/aristoteles.jpg" alt="" class="img-fluid">
+                                <h4>Aristóteles</h4>
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> La educación no es un problema</h3>
+                                <p class="lead">La educación es un ornamento en la prosperidad y un refugio en la adversidad.</p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+
+                        <div class="testimonial clearfix">
+							<div class="testi-meta">
+                                <img src="images/albertinstin.jpg" alt="" class="img-fluid">
+                                <h4>Albert Einstein</h4>
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i>la educación es una oportunidad</h3>
+                                <p class="lead">La sabiduría no es producto de la escolarización, sino de un intento a lo largo de la vida de adquirirlo.</p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+
+                        <div class="testimonial clearfix">
+							<div class="testi-meta">
+                                <img src="images/edwareverts.jpg" alt="" class="img-fluid">
+                                <h4>Edward Everett</h4>
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> la educación es una oportunidad</h3>
+                                <p class="lead">La educación es una mejor salvaguardia de la libertad que un ejército permanente. </p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div><!-- end testimonial -->
+                    </div><!-- end carousel -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    <div class="parallax section dbcolor">
+        <div class="container">
+            <div class="row logos">
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/themex-logob.png" alt="" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/themex-logob.png" alt="" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/themex-logob.png" alt="" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/themex-logob.png" alt="" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/themex-logob.png" alt="" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/themex-logob.png" alt="" class="img-repsonsive"></a>
+                </div>
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Sobre Nosotros</h3>
+                        </div>
+                        <p> La Comunidad Educativa, de la Institucion Educativa Secundario AGROINDUSTRIAL Nº 72 Ayaviri, otrora "Instituto Nacional Agropecuario Nº 72", tiene a bien de presentar a la opinión pública, el Web site, con motivos de Celebrar el próximo 3 de julio.</p>   
+						<div class="footer-right">
+							<ul class="footer-links-soi">
+								<li><a href="https://www.facebook.com/iesjecagroindustrial.ayavirimelgar"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-github"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+								<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							</ul><!-- end links -->
+						</div>						
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+
+				<div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Enlace de Información</h3>
+                        </div>
+                        <ul class="footer-links">
+                            <li><a href="/index.html">inicio</a></li>
+                            <li><a href="/blog.html">Nuestros Servicios</a></li>
+                            <!--<li><a href="#">Precios</a></li>-->
+							<li><a href="/about.html">nosotros</a></li>
+							<li><a href="/contact.html">Contacto</a></li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Detalles de Contactos</h3>
+                        </div>
+
+                        <ul class="footer-links">
+                            <li><a href="mailto:#">agroindustrial72@edu.com</a></li>
+                            <li><a href="#">www.agroindustrial72.com</a></li>
+                            <li>prolongacion dos de mayo - Ayaviri</li>
+                            <li>951467278</li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </footer><!-- end footer -->
+
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-center">                   
+                    <p class="footer-company-name">Derechos reservados. &copy; 2022 <a href="#">IES AGROINDUSTRIAL72</a> Diseñado por : <a href="https://html.design/">VMB & REAH</a></p>
+                </div>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+
+</body>
+</html>
